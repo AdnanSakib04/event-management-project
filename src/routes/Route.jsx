@@ -6,6 +6,7 @@ import EventDetails from "../pages/Home/EventDetails";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import PastEvents from "../pages/PastEvents";
 
 const router = createBrowserRouter([
   {
@@ -25,8 +26,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/pastevents",
-        element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
-        loader: ()=> fetch('../../public/educational_training_events_data.json')
+        element: <PrivateRoute><PastEvents></PastEvents></PrivateRoute>,
+        loader: ()=> fetch('../../public/past_events_data.json')
       },
       {
         path: "/login",
