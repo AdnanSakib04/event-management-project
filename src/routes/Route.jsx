@@ -24,6 +24,11 @@ const router = createBrowserRouter([
         loader: ()=> fetch('../../public/educational_training_events_data.json')
       },
       {
+        path: "/pastevents",
+        element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
+        loader: ()=> fetch('../../public/educational_training_events_data.json')
+      },
+      {
         path: "/login",
         element: <Login></Login>,
       },
