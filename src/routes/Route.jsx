@@ -12,6 +12,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: ()=> fetch('../../public/educational_training_events_data.json')
       },
     ],
   },
