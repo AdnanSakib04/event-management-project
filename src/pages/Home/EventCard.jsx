@@ -1,17 +1,30 @@
-
-const EventCard = ({event}) => {
-    const { id, short_description,long_description, price, title, image } = event;
+import { IoPricetagOutline } from "react-icons/io5";
+import { TbFileDescription } from "react-icons/tb";
+const EventCard = ({ event }) => {
+    const { id, short_description, long_description, price, title, image } = event;
     return (
-        <div  className={`card card-compact w-[312px]   `}>
-        <figure className="w-[312px] h-[194px]"><img src={image} alt="" /></figure>
-        <div className="card-body">
-           
-            <h2 className={`card-title font-semibold`}>{title}</h2>
+        <div className={'card card-compact w-[400px] h-[442px] border shadow-lg'}>
+            <figure className="h-[210px]">
+                <img src={image} alt="" />
+            </figure>
 
-            
-           
+            <div className="card-body text-black ">
+                <h2 className={'card-title font-semibold text-xl'}>{title}</h2>
+               <div className="flex items-center gap-2">
+               <h2  className="text-base"><IoPricetagOutline></IoPricetagOutline></h2>
+                <h3 className="text-base "> Price: {price}$</h3>
+               </div>
+
+               <div className="flex items-start gap-2">
+                <h2 className=" text-base"><TbFileDescription></TbFileDescription></h2>
+                <p className=" text-base text-justify">{short_description}</p>
+               </div>
+                <div className="flex flex-grow">
+
+                </div>
+               <button className="btn btn-neutral ">View</button>
+            </div>
         </div>
-    </div>
     );
 };
 
