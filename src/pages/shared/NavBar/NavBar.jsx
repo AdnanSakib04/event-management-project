@@ -12,12 +12,12 @@ const NavBar = () => {
             .catch()
     }
     const navLinks = <>
-        <li><NavLink  className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/">Home</NavLink></li>
-        <li><NavLink  className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/login">Login</NavLink></li>
-        <li><NavLink  className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/register">Register</NavLink></li>
+        <li><NavLink className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/">Home</NavLink></li>
+        <li><NavLink className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/login">Login</NavLink></li>
+        <li><NavLink className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/register">Register</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -34,13 +34,23 @@ const NavBar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                {navLinks}
+                    {navLinks}
                 </ul>
+
             </div>
             <div className="navbar-end">
-            {
+                {
                     user ?
-                        <button onClick={handleSignOut} className="btn">Sign Out</button>
+                        <div className="flex items-center gap-3">
+                            <p>{user.displayName}</p>
+                            <label  className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 h-10 rounded-[40px] ">
+                                <img src={user.photoURL} />
+                            </div>
+                            </label>
+                            <button onClick={handleSignOut} className="btn">Log Out</button>
+                        </div>
+
                         :
                         <Link to="/login">
                             <button className="btn">Login</button>
