@@ -42,10 +42,10 @@ const NavBar = () => {
                 {
                     user ?
                         <div className="flex items-center gap-3">
-                            <p>{user.displayName}</p>
+                            <p>{user?.displayName}</p>
                             <label  className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 h-10 rounded-[40px] ">
-                                <img src={user.photoURL} />
+                                <img src={user?.photoURL} />
                             </div>
                             </label>
                             <button onClick={handleSignOut} className="btn">Log Out</button>
