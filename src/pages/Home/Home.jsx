@@ -9,7 +9,6 @@ const Home = () => {
             <div className=" max-w-7xl mx-auto">
                 <Services></Services>
             </div>
-
         </div>
     );
 };

@@ -1,7 +1,8 @@
 import { IoPricetagOutline } from "react-icons/io5";
 import { TbFileDescription } from "react-icons/tb";
+import { Link } from "react-router-dom";
 const EventCard = ({ event }) => {
-    const { id, short_description, long_description, price, title, image } = event;
+    const { id, short_description, price, title, image } = event;
     return (
         <div className={'card card-compact w-[400px] h-[442px] border shadow-lg'}>
             <figure className="h-[210px]">
@@ -22,7 +23,7 @@ const EventCard = ({ event }) => {
                 <div className="flex flex-grow">
 
                 </div>
-               <button className="btn btn-neutral ">View</button>
+              <Link to={`/eventdetails/${id}`} className=" text-center"> <button className="btn btn-neutral ">View</button></Link>
             </div>
         </div>
     );

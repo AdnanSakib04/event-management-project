@@ -3,9 +3,12 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
 
     const navLinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
-        <li><NavLink to="/register">Register</NavLink></li>
+        <li><NavLink  className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/">Home</NavLink></li>
+        <li><NavLink  className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/login">Login</NavLink></li>
+        <li><NavLink  className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/register">Register</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
