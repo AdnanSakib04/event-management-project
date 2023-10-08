@@ -32,7 +32,8 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Event Management</a>
+                {/* <a className="btn btn-ghost normal-case text-xl">Event Management</a> */}
+                <img className="h-1/2 w-1/2 md:h-[50px] md:w-[180px]" src="https://i.ibb.co/VW0HXqv/image.png" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
