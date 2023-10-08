@@ -4,26 +4,26 @@ import { Link } from "react-router-dom";
 const EventCard = ({ event }) => {
     const { id, short_description, price, title, image } = event;
     return (
-        <div className={'card card-compact w-[400px] h-[442px] border shadow-lg'}>
+        <div className={'card card-compact w-[400px] h-[442px]  shadow-lg border bg-white'}>
             <figure className="h-[210px]">
                 <img src={image} alt="" />
             </figure>
 
             <div className="card-body text-black ">
-                <h2 className={'card-title font-semibold text-xl'}>{title}</h2>
-               <div className="flex items-center gap-2">
-               <h2  className="text-base"><IoPricetagOutline></IoPricetagOutline></h2>
+                <h2 className={'card-title font-semibold text-xl text-green-600'}>{title}</h2>
+               <div className="flex items-center gap-2 ">
+               <h2  className="text-base text-green-600"><IoPricetagOutline></IoPricetagOutline></h2>
                 <h3 className="text-base "> Price: {price}$</h3>
                </div>
 
                <div className="flex items-start gap-2">
-                <h2 className=" text-base"><TbFileDescription></TbFileDescription></h2>
+                <h2 className=" text-base text-green-600"><TbFileDescription></TbFileDescription></h2>
                 <p className=" text-base text-justify">{short_description}</p>
                </div>
                 <div className="flex flex-grow">
 
                 </div>
-              <Link to={`/eventdetails/${id}`} className=" text-center"> <button className="btn btn-neutral ">View</button></Link>
+              <Link to={`/eventdetails/${id}`} className=" text-center"> <button className="btn  bg-green-300 font-bold ">View</button></Link>
             </div>
         </div>
     );

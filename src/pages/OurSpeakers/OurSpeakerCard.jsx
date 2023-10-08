@@ -3,7 +3,7 @@ import { MdTitle } from "react-icons/md";
 const OurSpeakerCard = ({ ourSpeaker }) => {
     const {  title, photo, name, bio } = ourSpeaker;
     return (
-        <div className="  border shadow-lg flex flex-col md:flex-row  rounded-3xl md:rounded-full md:max-w-[600px] ">
+        <div className="  border shadow-lg flex flex-col md:flex-row  bg-white rounded-3xl md:rounded-full md:max-w-[600px] ">
                 <div className="md:flex-1 px-6 pt-6 md:px-0 md:pt-0">
                 <img className=" md:rounded-full md:h-full" src={photo} alt="" />
                 </div>

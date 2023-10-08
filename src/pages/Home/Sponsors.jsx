@@ -1,8 +1,8 @@
 
 const Sponsors = () => {
     return (
-        <div>
-            <h1 className=" text-5xl font-bold text-center mb-8">Our Sponsors</h1>
+        <div className=" bg-white shadow-lg border mb-40 rounded-3xl">
+            <h1 className="mt-4 text-5xl font-bold text-center mb-8"><span>Our</span> <span className=" text-green-600">Sponsors</span></h1>
 
 
             <div className=" card-body grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-items-center gap-y-4">

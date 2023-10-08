@@ -5,9 +5,9 @@ const Services = () => {
     const eventData = useLoaderData();
     return (
         <div>
-            <h1 className="mt-16 mb-8 text-center text-4xl font-bold">Our Services</h1>
+            <h1 className="mt-16 mb-8 text-center text-5xl font-bold "><span className="text-green-600">Our</span> <span className="">Services</span></h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-y-6 mb-20 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-y-6 mb-20 justify-items-center p-4 md:p-0">
           {eventData.map((event) => (
                     <EventCard key={event.id} event={event}></EventCard> 
                 ))}

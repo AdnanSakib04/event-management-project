@@ -13,18 +13,19 @@ const NavBar = () => {
     }
     const navLinks = <>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/">Home</NavLink></li>
+            isPending ? "pending" : isActive ? "text-green-500 font-bold underline" : ""} to="/">Home</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/pastevents">Past Events</NavLink></li>
+            isPending ? "pending" : isActive ? "text-green-500 font-bold underline" : ""} to="/pastevents">Past Events</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/ourspeakers">Our Speakers</NavLink></li>
+            isPending ? "pending" : isActive ? "text-green-500 font-bold underline" : ""} to="/ourspeakers">Our Speakers</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/login">Login</NavLink></li>
+            isPending ? "pending" : isActive ? "text-green-500 font-bold underline" : ""} to="/login">Login</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/register">Register</NavLink></li>
+            isPending ? "pending" : isActive ? "text-green-500 font-bold underline" : ""} to="/register">Register</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="bg-base-100">
+            <div className="navbar  max-w-7xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -53,15 +54,16 @@ const NavBar = () => {
                                 <img src={user?.photoURL} />
                             </div>
                             </label>
-                            <button onClick={handleSignOut} className="btn">Log Out</button>
+                            <button onClick={handleSignOut} className="btn bg-green-300 font-bold">Log Out</button>
                         </div>
 
                         :
                         <Link to="/login">
-                            <button className="btn">Login</button>
+                            <button className="btn bg-green-500">Login</button>
                         </Link>
                 }
             </div>
+        </div>
         </div>
     );
 };
