@@ -7,6 +7,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import PastEvents from "../pages/PastEvents";
+import OurSpeakers from "../pages/OurSpeakers/OurSpeakers";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
         path: "/pastevents",
         element: <PrivateRoute><PastEvents></PastEvents></PrivateRoute>,
         loader: ()=> fetch('../../public/past_events_data.json')
+      },
+      {
+        path: "/ourspeakers",
+        element: <PrivateRoute><OurSpeakers></OurSpeakers></PrivateRoute>,
+        loader: ()=> fetch('../../public/our_speakers_data.json')
       },
       {
         path: "/login",

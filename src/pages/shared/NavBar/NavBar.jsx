@@ -17,6 +17,8 @@ const NavBar = () => {
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/pastevents">Past Events</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/ourspeakers">Our Speakers</NavLink></li>
+        <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/login">Login</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] font-bold underline" : ""} to="/register">Register</NavLink></li>

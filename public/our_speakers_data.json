@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Prof. Nick Cruise",
+      "title": "Keynote Speaker",
+      "bio": "Prof. Nick Cruise is an esteemed academic scholar in the field of economics.",
+      "photo": "https://i.ibb.co/d5Z27cX/image.png"
+    },
+    {
+      "id": 2,
+      "name": "James Robertson",
+      "title": "Marketing Guru",
+      "bio": "James Robertson is a successful entrepreneur and innovator, known for founding and leading technology startups.",
+      "photo": "https://i.ibb.co/kgGG4W1/image.png"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Michael Turner",
+      "title": "Leadership Coach",
+      "bio": "Dr. Michael Turner is a dedicated medical researcher specializing in infectious diseases.",
+      "photo": "https://i.ibb.co/r5Fjh7G/image.png"
+    },
+    {
+      "id": 4,
+      "name": "David Clark",
+      "title": "Financial Strategist",
+      "bio": "David Clark is a seasoned financial strategist with expertise in investment management and risk analysis.",
+      "photo": "https://i.ibb.co/2sxJD10/image.png"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Chris Anderson",
+      "title": "AI Research Scientist",
+      "bio": "Dr. Chris Anderson is a leading AI research scientist with a focus on machine learning and natural language processing.",
+      "photo": "https://i.ibb.co/sv5LB5B/image.png"
+    },
+    {
+      "id": 6,
+      "name": "Ryan Smith",
+      "title": "Manager",
+      "bio": "With a background in software engineering, Ryan Smith shares insights into the latest trends shaping the tech industry.",
+      "photo": "https://i.ibb.co/CKH51Bs/image.png"
+    }
+  ]
+  
