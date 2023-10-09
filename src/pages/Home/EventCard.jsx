@@ -10,15 +10,15 @@ const EventCard = ({ event }) => {
             </figure>
 
             <div className="card-body text-black ">
-                <h2 className={'card-title font-semibold text-xl text-green-600'}>{title}</h2>
+                <h2 className={'card-title font-bold text-xl text-green-600'}>{title}</h2>
                <div className="flex items-center gap-2 ">
-               <h2  className="text-base text-green-600"><IoPricetagOutline></IoPricetagOutline></h2>
-                <h3 className="text-base "> Price: {price}$</h3>
+               <h2  className="text-base text-green-600 font-semibold"><IoPricetagOutline></IoPricetagOutline></h2>
+                <h3 className="text-base font-semibold"> Price: {price}$</h3>
                </div>
 
                <div className="flex items-start gap-2">
                 <h2 className=" text-base text-green-600"><TbFileDescription></TbFileDescription></h2>
-                <p className=" text-base text-justify">{short_description}</p>
+                <p className=" text-base text-justify text-gray-500">{short_description}</p>
                </div>
                 <div className="flex flex-grow">
 
