@@ -4,5 +4,6 @@
 - **Navbar with Active Route:** Users can readily identify the route they are on because of a feature in the navbar that shows active routes.
 - **404 Route**: A customized 404 route is used to handle situations in which a page cannot be found.
 - **Responsiveness:** On a wide range of devices, such as tablets, smartphones, and desktop PCs, the website is responsive.
+- **Sign in with Google:** Users can also sign in to the website using their google account, so they don't have to set any password.
 
 
