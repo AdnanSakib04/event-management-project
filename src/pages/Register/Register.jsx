@@ -36,41 +36,43 @@ const Register = () => {
 
      
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto mb-40'>
 
-            <div>
-                <h2 className=" text-3xl mt-8 text-center">Register</h2>
-                <form onSubmit={handleRegister} className="md:w-1/2 mx-auto card-body">
+            <div className="  p-4 mt-8 rounded-3xl ">
+               
+                <form onSubmit={handleRegister} className="md:w-1/2 mx-auto card-body bg-white rounded-3xl">
+                <h1 className="text-4xl font-bold lg:text-5xl mt-8 text-center"><span className="text-green-600">Please</span> Register</h1>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Name</span>
+                            <span className="label-text font-medium text-[18px]">Name</span>
                         </label>
-                        <input type="text" required name="name" placeholder="Name" className="input input-bordered" />
+                        <input type="text"  name="name" placeholder="Name" className="input input-bordered  bg-base-200" required/>
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Photo URL</span>
+                            <span className="label-text font-medium text-[18px]">Photo URL</span>
                         </label>
-                        <input type="text" required name="photo" placeholder="Photo URL" className="input input-bordered" />
+                        <input type="text"  name="photo" placeholder="Photo URL" className="input input-bordered  bg-base-200" required/>
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="label-text font-medium text-[18px]">Email</span>
                         </label>
-                        <input type="email" placeholder="email" name="email" className="input input-bordered" required />
+                        <input type="email" placeholder="email" name="email" className="input input-bordered  bg-base-200" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Password</span>
+                            <span className="label-text font-medium text-[18px]">Password</span>
                         </label>
-                        <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                        <input type="password" name="password" placeholder="password" className="input input-bordered  bg-base-200" required />
 
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Register</button>
+                        <button className="btn bg-green-300 font-bold text-xl">Register</button>
                     </div>
+                    <p className="text-center mt-6 text-xl font-medium">Already have an account? <Link className=" text-green-600 font-bold" to={'/login'}>Login</Link></p>
                 </form>
-                <p className=" text-center mt-4">Already have an account? <Link className=" text-blue-600 font-bold" to={'/login'}>Login</Link></p>
+                
             </div>
             <ToastContainer></ToastContainer>
         </div>
