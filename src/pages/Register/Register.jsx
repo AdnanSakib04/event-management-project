@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
     const { createUser, handleProfileUpdate, signInWithGoogle } = useContext(AuthContext);
 
+
     const handleRegister = e => {
         e.preventDefault();
         console.log(e.currentTarget);
@@ -17,6 +18,24 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
         // console.log(name, photo, email, password);
+
+        
+
+        
+        if (password.length<6) {
+            toast.error('Password must be at least 6 characters or more.');
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            toast.error('Password must contain at least one uppercase letter.');
+            return;
+        }
+        else if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+            toast.error('Password must contain at least one special character.');
+            return;
+        }
+       
+
 
         createUser(email, password)
             .then(result => {
