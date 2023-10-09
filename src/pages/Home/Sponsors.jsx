@@ -1,7 +1,7 @@
 
 const Sponsors = () => {
     return (
-        <div className=" bg-white shadow-lg border mb-40 rounded-3xl">
+        <div data-aos="zoom-in" className=" bg-white shadow-lg border mb-40 rounded-3xl">
             <h1 className="mt-10 text-5xl font-bold text-center mb-8"><span className=" text-green-600">Our</span> <span >Sponsors</span></h1>
 
 
