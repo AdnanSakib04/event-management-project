@@ -11,9 +11,9 @@ const EventDetails = () => {
             <img className="w-full lg:h-[750px]" src={event.image} alt="" />
          <h2 className=" text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-5 mb-5 ">{event.title}</h2>
             
-           <div className="flex items-center justify-center gap-2 mb-6 border-4 border-green-500 rounded-xl max-w-max mx-auto p-3 ">
-           <h2  className="text-xl md:text-2xl font-bold "><IoPricetagOutline></IoPricetagOutline></h2>
-            <h3 className="text-xl md:text-2xl font-bold "> Price: {event.price}<span className="">$</span></h3>
+           <div className="flex items-center justify-center gap-2 mb-6 border-4 border-green-500 rounded-xl max-w-max mx-auto p-2 md:p-3 ">
+           <h2  className="text-base md:text-2xl font-bold "><IoPricetagOutline></IoPricetagOutline></h2>
+            <h3 className="text-base md:text-2xl font-bold "> Price: {event.price}<span className="">$</span></h3>
            </div>
 
            <p className=" text-xl text-justify mb-10 font-semibold">{event.long_description}</p>
