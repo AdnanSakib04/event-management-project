@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Career Fair",
     "image": "https://i.ibb.co/ZLtK91J/image.png",
-    "price": 100,
+    "price": 300,
     "short_description": "Our meticulous planning  set us apart as the preferred choice for job seekers and employers alike.",
     "long_description": "Our meticulous planning  set us apart as the preferred choice for job seekers and employers alike. We believe in creating more than just a job fair; we craft dynamic environments where talent meets opportunity seamlessly. Our team of seasoned professionals ensures that every aspect of the Career Fair, from engaging networking sessions to on-the-spot interviews, is meticulously planned to provide maximum value."
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Educational Conference",
     "image": "https://i.ibb.co/9Z6380F/image.png",
-    "price": 50,
+    "price": 500,
     "short_description": "Elevate educational discourse with our meticulously planned Educational Conferences!",
     "long_description": "Elevate educational discourse with our meticulously planned Educational Conferences! As leaders in event management, we curate immersive gatherings that bring together educators, administrators, and thought leaders. Choose us for an educational conference experience that inspires, informs, and sets the stage for transformative insights in the field of education."
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Training Program",
     "image": "https://i.ibb.co/F6Xv8p4/image.png",
-    "price": 100,
+    "price": 400,
     "short_description": "As a leading event management company, we specialize in crafting comprehensive programs that elevate skills and knowledge.",
     "long_description": "Embark on a transformative learning journey with us as your trusted partner. Our Training Programs stand out as beacons of excellence, meticulously crafted to cater to individuals seeking in-depth knowledge, practical skills, and a competitive edge in their respective fields."
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "Debate Competitions",
     "image": "https://i.ibb.co/Hh20HGQ/image.png",
-    "price": 75,
+    "price": 750,
     "short_description": "we plan Debate Competitions that transcend the ordinary and provide a platform for participants to unlock their leadership potential",
     "long_description": "Why should you choose us as your event management partner for Debate Competitions? The answer lies in our commitment to creating events that go beyond the surface, offering participants an immersive experience that not only challenges their intellect but also hones their skills in effective communication, critical thinking, and leadership."
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "STEM Competition",
     "image": "https://i.ibb.co/K5XTK7h/image.png",
-    "price": 25,
+    "price": 250,
     "short_description": "Our team plans STEM Competitions that transcend traditional boundaries and inspire the next generation of innovators. ",
     "long_description": "Our STEM Competitions are more than just contests; they are celebrations of innovation, collaboration, and the pursuit of knowledge. As your event management partner, we go beyond the basics, ensuring that each competition is a meticulously planned journey into the exciting world of STEM disciplines. What sets us apart is our dedication to providing an immersive experience where participants not only compete but also learn and grow."
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "title": "Workshops and Webinars",
     "image": "https://i.ibb.co/nQVn9c6/image.png",
-    "price": 30,
+    "price": 300,
     "short_description": "Our team don't just plan workshops and webinars; they craft experiences that leave a lasting impact.",
     "long_description": "Why should you select us as your partner in workshop and webinar event management? Our constant dedication to excellence in training and education holds the key to the solution. Choose us, and let's embark on a journey of learning, skill development, and shared knowledge."
   }
