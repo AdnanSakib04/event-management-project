@@ -2,35 +2,45 @@ import { Link, Navigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
+import { FcGoogle } from "react-icons/fc";
+
 import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
-    const { createUser, handleUpdateProfile } = useContext(AuthContext);
+    const { createUser, handleProfileUpdate, signInWithGoogle } = useContext(AuthContext);
 
     const handleRegister = e => {
         e.preventDefault();
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
-
         const name = form.get('name');
         const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name, photo, email, password);
+        // console.log(name, photo, email, password);
 
-        // create user
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
-                handleUpdateProfile(name, photo)
+                handleProfileUpdate(name, photo)
                 .then(() => {
-                    toast.success('User created successfully');
+                    toast.success('Account created successfully');
                     Navigate('/')
-  
                 })
             })
             .catch(error => {
                 console.error(error)
-                toast.error(error.message)
+                toast.error(error.message);
+            })
+    }
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result.user)
+                toast.success('You have successfully logged in');
+            })
+            .catch(error => {
+                console.error(error)
             })
     }
 
@@ -70,6 +80,9 @@ const Register = () => {
                     <div className="form-control mt-6">
                         <button className="btn bg-green-300 font-bold text-xl">Register</button>
                     </div>
+                    <p onClick={handleGoogleSignIn} className="mt-2 shadow-md btn bg-transparent hover:bg-base-200  font-semibold hover:text-black py-2 px-4 border-2 border-green-600 hover:border-transparent rounded-xl max-w-max mx-auto">
+                        <span className="text-3xl"><FcGoogle></FcGoogle></span> Continue with Google
+                    </p>
                     <p className="text-center mt-6 text-xl font-medium">Already have an account? <Link className=" text-green-600 font-bold" to={'/login'}>Login</Link></p>
                 </form>
                 

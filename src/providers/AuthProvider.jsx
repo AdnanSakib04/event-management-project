@@ -1,8 +1,10 @@
 import { createContext, useEffect, useState } from "react";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext(null);
+
+const googleProvider = new GoogleAuthProvider();
 
 const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
@@ -14,9 +16,14 @@ const AuthProvider = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
-    const signIn = (email, password) => {
+    const signInUser = (email, password)=> {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
+    }
+
+    const signInWithGoogle = ()=>{
+        setLoading(true);
+        return signInWithPopup(auth, googleProvider);
     }
 
     const logOut = () => {
@@ -24,14 +31,14 @@ const AuthProvider = ({ children }) => {
         return signOut(auth);
     }
 
-    const handleUpdateProfile = (name, photo) => {
+    const handleProfileUpdate = (name, photo) => {
         return updateProfile(auth.currentUser, {
             displayName: name, photoURL: photo
         })
     }
 
     useEffect(() => {
-        const unSubscribe = onAuthStateChanged(auth, currentUser => {
+        const unSubscribe = onAuthStateChanged(auth, currentUser =>{
             setUser(currentUser);
             setLoading(false);
         });
@@ -42,12 +49,15 @@ const AuthProvider = ({ children }) => {
 
     const authInfo = {
         user,
-        loading,
         createUser,
-        signIn,
+        signInUser,
+        loading,
+        signInWithGoogle,
         logOut,
-        handleUpdateProfile
+        handleProfileUpdate
     }
+
+
     return (
         <AuthContext.Provider value={authInfo}>
             {children}
