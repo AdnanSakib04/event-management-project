@@ -122,7 +122,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: The correct answer is undefined
 
 <i>Write your explanation here</i>
 
