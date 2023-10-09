@@ -4,47 +4,47 @@
     "title": "Career Fair",
     "image": "https://i.ibb.co/ZLtK91J/image.png",
     "price": 100,
-    "short_description": "Explore diverse career opportunities and connect with leading employers.",
-    "long_description": "Join our highly anticipated Career Fair, where job seekers and employers converge in a dynamic and vibrant environment. From engaging networking sessions to on-the-spot interviews, this event serves as a pivotal bridge between talent and opportunity. Our commitment to excellence ensures that participants leave not only with valuable connections but also with the potential for significant career advancements. Whether you're a recent graduate or an experienced professional, the Career Fair is your gateway to discovering new horizons and achieving your career aspirations."
+    "short_description": "Our meticulous planning  set us apart as the preferred choice for job seekers and employers alike.",
+    "long_description": "Our meticulous planning  set us apart as the preferred choice for job seekers and employers alike. We believe in creating more than just a job fair; we craft dynamic environments where talent meets opportunity seamlessly. Our team of seasoned professionals ensures that every aspect of the Career Fair, from engaging networking sessions to on-the-spot interviews, is meticulously planned to provide maximum value."
   },
   {
     "id": 2,
     "title": "Educational Conference",
     "image": "https://i.ibb.co/9Z6380F/image.png",
     "price": 50,
-    "short_description": "An enriching gathering of education professionals, exploring the future of learning.",
-    "long_description": "Welcome to our premier Educational Conference, a global platform for educators, administrators, and thought leaders to engage in thought-provoking discussions and share insights. This immersive event features interactive workshops, inspiring keynotes, and access to cutting-edge research in the field of education. Our commitment to educational excellence ensures that participants leave the conference inspired, informed, and well-equipped to navigate the evolving landscape of education."
+    "short_description": "Elevate educational discourse with our meticulously planned Educational Conferences!",
+    "long_description": "Elevate educational discourse with our meticulously planned Educational Conferences! As leaders in event management, we curate immersive gatherings that bring together educators, administrators, and thought leaders. Choose us for an educational conference experience that inspires, informs, and sets the stage for transformative insights in the field of education."
   },
   {
     "id": 3,
     "title": "Training Program",
     "image": "https://i.ibb.co/F6Xv8p4/image.png",
     "price": 100,
-    "short_description": "Elevate your skills and career with our intensive and industry-focused training.",
-    "long_description": "Embark on a transformative journey with our comprehensive Training Program, meticulously crafted for individuals seeking in-depth knowledge and practical skills. Delivered by industry experts, this program covers the latest trends and technologies in your field. Whether you're a seasoned professional or just starting your career, our commitment to your success shines through in every module. Join us for an immersive learning experience that goes beyond the basics, providing valuable insights and fostering skills that are immediately applicable in your professional journey."
+    "short_description": "As a leading event management company, we specialize in crafting comprehensive programs that elevate skills and knowledge.",
+    "long_description": "Embark on a transformative learning journey with us as your trusted partner. Our Training Programs stand out as beacons of excellence, meticulously crafted to cater to individuals seeking in-depth knowledge, practical skills, and a competitive edge in their respective fields."
   },
   {
     "id": 4,
     "title": "Debate Competitions",
     "image": "https://i.ibb.co/Hh20HGQ/image.png",
     "price": 75,
-    "short_description": "Unlock your leadership potential and drive positive change in your organization.",
-    "long_description": "Immerse yourself in our Leadership Seminar, a transformative experience designed to empower leaders with the skills and insights needed to thrive in today's dynamic world. Through engaging sessions, real-world case studies, and interactive discussions, participants will hone their leadership abilities and gain a deeper understanding of effective management strategies. This seminar is not just about theory; it's about practical, actionable insights that will elevate your leadership prowess and contribute to the positive growth of your organization."
+    "short_description": "we plan Debate Competitions that transcend the ordinary and provide a platform for participants to unlock their leadership potential",
+    "long_description": "Why should you choose us as your event management partner for Debate Competitions? The answer lies in our commitment to creating events that go beyond the surface, offering participants an immersive experience that not only challenges their intellect but also hones their skills in effective communication, critical thinking, and leadership."
   },
   {
     "id": 5,
     "title": "STEM Competition",
     "image": "https://i.ibb.co/K5XTK7h/image.png",
     "price": 25,
-    "short_description": "Ignite the passion for science, technology, engineering, and math in a collaborative competition.",
-    "long_description": "Calling all young minds to participate in our exhilarating STEM Competition! Engage in a series of challenges designed to foster creativity, critical thinking, and teamwork. Supported by mentors from various STEM fields, participants will not only compete but also learn and grow in an environment that celebrates innovation. Join us for an inspiring experience that not only encourages a love for STEM disciplines but also lays the foundation for a future where these skills play a pivotal role in shaping a better world."
+    "short_description": "Our team plans STEM Competitions that transcend traditional boundaries and inspire the next generation of innovators. ",
+    "long_description": "Our STEM Competitions are more than just contests; they are celebrations of innovation, collaboration, and the pursuit of knowledge. As your event management partner, we go beyond the basics, ensuring that each competition is a meticulously planned journey into the exciting world of STEM disciplines. What sets us apart is our dedication to providing an immersive experience where participants not only compete but also learn and grow."
   },
   {
     "id": 6,
     "title": "Workshops and Webinars",
     "image": "https://i.ibb.co/nQVn9c6/image.png",
     "price": 30,
-    "short_description": "Participate in diverse workshops designed to enhance your skills and knowledge.",
-    "long_description": "Dive into a world of learning with our versatile Workshops. From digital marketing and coding to creative writing and mindfulness, our workshops cover a broad spectrum of topics to cater to varied interests. Led by industry experts and seasoned professionals, these sessions provide a hands-on and immersive learning experience. Join us to broaden your horizons, acquire practical skills, and network with like-minded individuals. The commitment to excellence in education and training sets our workshops apart, ensuring that participants leave with not only new skills but also a renewed passion for continuous learning and growth."
+    "short_description": "Our team don't just plan workshops and webinars; they craft experiences that leave a lasting impact.",
+    "long_description": "Why should you select us as your partner in workshop and webinar event management? Our constant dedication to excellence in training and education holds the key to the solution. Choose us, and let's embark on a journey of learning, skill development, and shared knowledge."
   }
 ]
