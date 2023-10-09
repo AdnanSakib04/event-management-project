@@ -1,7 +1,7 @@
 # Educational and Training Event Management
 
-## [live Link](https://event-management-project-fa8f8.web.app)
 
+live Link: [https://event-management-project-fa8f8.web.app](https://event-management-project-fa8f8.web.app)
 
 
 **Project features are given below:** 
