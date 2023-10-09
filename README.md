@@ -1,3 +1,9 @@
+# Educational and Training Event Management
+
+## [live Link](https://event-management-project-fa8f8.web.app)
+
+
+
 **Project features are given below:** 
 - **Email and Password Authentication:** Users can create there account with their email and setting up a password. They can login any time into the website using their email and password.
 - **Private Route:** This project includes three private routes. To see the service details, to the event speakers information and past events, a user must be logged into the website. Otherwise, if hey want to visit this pages, they will be redirected to the login page.
