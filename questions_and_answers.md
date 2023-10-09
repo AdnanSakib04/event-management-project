@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: B: 'ReferenceError: greetign is not defined'
+#### Answer: C: 'undefined'
 
-<i>Write your explanation here</i>
+<i>it will give undefined because there is no variable declared named greetign</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>The code creates an array food and an object info with a favoriteFood property initially set to the first element of the food array. When info.favoriteFood is later assigned the string "🍝", it doesn't affect the original array. Therefore, logging the food array to the console outputs ["🍕", "🍫", "🥑", "🍔"]. The modification to info doesn't alter the original array.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: The correct answer is undefined
 
-<i>Write your explanation here</i>
+<i>sayHi function takes one parameter, name, and returns a greeting string using template literals. However, when we call sayHi() without providing an argument, the name parameter is not assigned a value. In JavaScript, when a parameter is not provided with a value, it defaults to undefined.</i>
 
 </p>
 </details>
