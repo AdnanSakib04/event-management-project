@@ -18,22 +18,22 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch('../../public/educational_training_events_data.json')
+        loader: ()=> fetch('../../educational_training_events_data.json')
       },
       {
         path: "/eventdetails/:id",
         element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
-        loader: ()=> fetch('../../public/educational_training_events_data.json')
+        loader: ()=> fetch('../../educational_training_events_data.json')
       },
       {
         path: "/pastevents",
         element: <PrivateRoute><PastEvents></PastEvents></PrivateRoute>,
-        loader: ()=> fetch('../../public/past_events_data.json')
+        loader: ()=> fetch('../../past_events_data.json')
       },
       {
         path: "/ourspeakers",
         element: <PrivateRoute><OurSpeakers></OurSpeakers></PrivateRoute>,
-        loader: ()=> fetch('../../public/our_speakers_data.json')
+        loader: ()=> fetch('../../our_speakers_data.json')
       },
       {
         path: "/login",
